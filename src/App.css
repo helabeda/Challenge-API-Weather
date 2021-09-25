@@ -1,0 +1,103 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  cursor: url(https://cur.cursors-4u.net/nature/nat-11/nat1025.cur), auto !important;
+}
+.App {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  font-family: "Inter", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #050f2c;
+}
+.App::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width:100%;
+  height:100%;
+  background: linear-gradient(#74b9ff, #ffffff);
+  clip-path: circle(30% at 80% 0%);
+}
+.App::after{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width:100%;
+  height:100%;
+  background: linear-gradient(#ffa502, #ffffff);
+  clip-path: circle(30% at 20% 80%);
+}
+.search{
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index:1;
+}
+.inputSearch{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2%;
+  z-index:1;
+}
+.container{
+  position: relative;
+  max-width: 1200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  z-index: 1;
+}
+.card{
+  margin-top:5%;
+  width: 250px;
+  height: 350px;
+  position: relative;
+  background: radial-gradient(
+    140% 140% at 0% 0%, 
+    rgba(255, 255, 255, 0.4)0%, 
+    rgba(255, 255, 255, 0)100%);
+  border-top: 1px solid #eeeded70;
+  border-left: 1px solid #eeeded70;
+  border-radius: 30px;
+  box-shadow: inset -5px -5px 250px rgba(255, 255, 255, 0.02);
+  backdrop-filter: blur(30px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card .content{
+  width: 100%;
+  height:100%;
+  padding: 20px;
+  text-align: center;
+}
+.content .temp{
+  position: relative;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  font-size: 80px;
+  font-weight: 300;
+}
+.content .temp .celsius{
+  position: absolute;
+  top:0;
+  right: 30px;
+  font-size: 16px;
+  font-weight: 200;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+.card .content .city{
+  display: block;
+}
